@@ -19,7 +19,11 @@ public class MainActivity extends Activity
     private void setText( int id, String text ) {
 
         TextView text_view = (TextView) findViewById( id );
-        text_view.setText( text );
+
+        if (null!=text_view) {
+
+            text_view.setText(text);
+        }
     }
 
     private void update() {
@@ -32,6 +36,17 @@ public class MainActivity extends Activity
     private void initRound() {
 
         m_Timer = 10;
+
+        ViewGroup container = (ViewGroup) findViewById( R.id.activity_main);
+
+        container.removeAllViews();
+
+
+
+        MainView main_view = new MainView( this, 8*(10+m_Round));
+
+        container.addView( main_view, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT );
+        container.addView( getLayoutInflater().inflate(R.layout.activity_main,null));
 
         // update text views...
         update();
@@ -67,6 +82,7 @@ public class MainActivity extends Activity
 
     private void startGame() {
 
+        newGame();
     }
 
     @Override
