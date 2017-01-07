@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.media.Image;
 import android.view.View;
 
 import java.util.Random;
@@ -48,8 +49,8 @@ public class MainView extends View {
 
             for (int i=0; i<m_ImageCount/images.length; ++i) {
 
-                float left = (float) (m_RND.nextFloat() * getWidth() - bitmap.getWidth());
-                float top = (float) (m_RND.nextFloat() * getHeight() - bitmap.getHeight());
+                float left = (float) (m_RND.nextFloat() * getWidth() - bitmap.getWidth() * 0.5);
+                float top = (float) (m_RND.nextFloat() * getHeight() - bitmap.getHeight() * 0.5);
 
                 canvas.drawBitmap( bitmap, left, top, m_Paint );
             }

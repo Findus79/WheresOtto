@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "20012138291",
+    "firebase_url": "https://wheresotto-69731.firebaseio.com",
+    "project_id": "wheresotto-69731",
+    "storage_bucket": "wheresotto-69731.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20012138291:android:0c3d45150beba18c",
+        "android_client_info": {
+          "package_name": "com.andreasmueller.wheresotto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20012138291-dnav4pj2nqhpfn3lh3v9ss5pe31hum8j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.andreasmueller.wheresotto",
+            "certificate_hash": "F4618AE6CCFA428C9F100B96CE394FD25E33DECD"
+          }
+        },
+        {
+          "client_id": "20012138291-d9f7hjosdgo6h69t6s1f48ic4jeagsp4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkZom8X5K_XR5Y9udplqBuoh_Rj71D4Ew"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20012138291-d9f7hjosdgo6h69t6s1f48ic4jeagsp4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

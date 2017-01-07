@@ -1,26 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     android:gravity="center_vertical|center_horizontal"
-    android:id="@+id/container">
+    android:id="@+id/container"
+    android:layout_width="match_parent">
 
-    <TextView
-        android:text="Where's Otto?"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:textAlignment="center"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textStyle="normal|bold"
-        android:textSize="48sp"
-        android:lineSpacingExtra="8sp" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:text="Start"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/start"
-        android:textAlignment="center"
-        android:textColor="@android:color/holo_orange_dark" />
+        <ImageView
+            android:src="@drawable/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:adjustViewBounds="true"
+            android:layout_gravity="top" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:text="Where's Otto?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textStyle="normal|bold"
+                android:textSize="48sp"
+                android:lineSpacingExtra="8sp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:text="Start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/start"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"
+            android:layout_gravity="bottom|center_vertical|center_horizontal">
+        </com.google.android.gms.ads.AdView>
+
+    </FrameLayout>
+
 </LinearLayout>

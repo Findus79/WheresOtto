@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_id">929378543587</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-6791997681369212~3551350486</string>
+
+    <string name="leaderboard_id">CgkI48-cmoYbEAIQAQ</string>
+
+    <string name="signin_other_error">There was an issue with sign in.  Please try again later.</string>
+
+    <string name="achievement_quick">CgkI48-cmoYbEAIQAg</string>
+    <string name="achievement_close">CgkI48-cmoYbEAIQAw</string>
+    <string name="achievement_biggest_fan">CgkI48-cmoYbEAIQBA</string>
+    <string name="achievement_wizard">CgkI48-cmoYbEAIQBQ</string>
+    <string name="achievement_master">CgkI48-cmoYbEAIQBg</string>
+</resources>
